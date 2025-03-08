@@ -18,6 +18,13 @@
 / {
     behaviors {
 
+        mo_lock: toggle_layer_on_only {
+            compatible = "zmk,behavior-momentary-layer";
+            #binding-cells = <1>;
+            display-name = "lock Layer On";
+            locking;
+        };
+
         tog_lock: toggle_layer_on_only {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
@@ -31,7 +38,7 @@
             tapping-term-ms = <TAPPING_TERM>;
             flavor = "hold-preferred";
             quick-tap-ms = <QUICK_TAP_TERM>;
-            bindings = <&mo>, <&tog_lock>;
+            bindings = <&mo_lock>, <&mo>;
         };
     };
 
