@@ -38,7 +38,7 @@
             tapping-term-ms = <TAPPING_TERM>;
             flavor = "hold-preferred";
             quick-tap-ms = <QUICK_TAP_TERM>;
-            bindings = <&mo>, <&mo_lock>;
+            bindings = <&mo>, <&tog_lock>;
         };
     };
 
