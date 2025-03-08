@@ -14,7 +14,9 @@
 #define QUICK_TAP_TERM 100
 
 
-/    behaviors {
+
+/ {
+    behaviors {
 
         tog_lock: toggle_layer_on_only {
             compatible = "zmk,behavior-toggle-layer";
@@ -32,8 +34,7 @@
             bindings = <&tog_lock>, <&mo>;
         };
     };
-
-/ {
+    
     keymap {
         compatible = "zmk,keymap";
 
