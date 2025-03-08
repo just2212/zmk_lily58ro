@@ -1,0 +1,26 @@
+#define TAPPING_TERM 250
+
+
+
+// https://github.com/zmkfirmware/zmk/pull/1984
+/ {
+    custom_hold_taps {
+
+        lay_ht: layer-tap-with-hold-preferred {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM>;
+            flavor = "hold-preferred";
+            quick-tap-ms = <QUICK_TAP_TERM>;
+            bindings = <&tog_lock>, <&mo>;
+        };
+
+        tog_lock: toggle_layer_on_only {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            display-name = "Toggle Layer On";
+            toggle-mode = "on";
+            locking = true;
+        };
+    };
+};
