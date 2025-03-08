@@ -22,7 +22,7 @@
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
             display-name = "Toggle Layer On";
-            locking = true;
+            locking;
         };
 
         lay_ht: layer-tap-with-hold-preferred {
@@ -34,7 +34,7 @@
             bindings = <&tog_lock>, <&mo>;
         };
     };
-    
+
     keymap {
         compatible = "zmk,keymap";
 
