@@ -18,7 +18,7 @@
 / {
     behaviors {
 
-        mo_lock: toggle_layer_on_only {
+        mo_lock: mo_layer_locked {
             compatible = "zmk,behavior-momentary-layer";
             #binding-cells = <1>;
             display-name = "lock Layer On";
