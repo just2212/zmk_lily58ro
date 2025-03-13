@@ -92,14 +92,14 @@
 // ------------------------------------------------------------------------------------------------------------
 // |  F1   |  F2  |  F3  |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
 // |   `   |  1   |  2   |  3   |  4   |  5   |                   | PG_UP| HOME  |   ^   |  END |   0   | C_VOL_UP |
-// | SHIFT |  F2  |  F3  |  F4  |  F5  |  F6  |                   | PG_DN|   <-  |   v   |  ->  |  ->   | C_VOL_DN |
+// | SHIFT |  F2  |  F3  |  F4  |  F5  |  F6  |                   | PG_DN|   <-  |   v   |  ->  |       | C_VOL_DN |
 // | CTRL  |CTRL+Z|CTRL+X|CTRL+C|CTRL+V|  F12 |      |  |   PSCRN |  +   |   -   |   =   |  [   |   ]   |   play   |
 //                       |      |      |      |      |  |         |      |       |       |
             bindings = <
 &kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &kp F7      &kp F8     &kp F9     &kp F10   &kp F11   &kp F12
 &kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &kp PG_UP   &kp HOME    &kp UP    &kp END   &kp N0    &kp C_VOL_UP
-&trans &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &PG_DN      &kp LEFT  &kp DOWN  &kp RIGHT   &kp RIGHT &kp C_VOL_DN
-&trans &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp F12   &PSCRN   &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &play
+&trans &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &PG_DN      &kp LEFT  &kp DOWN  &kp RIGHT   &kp trans &kp C_VOL_DN
+&trans &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp F12        &PSCRN     &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &play
                         &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans
             >;
 
