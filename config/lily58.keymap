@@ -53,7 +53,7 @@
             combo_esc {
                 timeout-ms = <100>;
                 key-positions = <44 56>;
-                bindings = <&kp tog_lock>;
+                bindings = <&tog_lock 2>;
             };
         };
     };
